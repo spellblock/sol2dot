@@ -1,0 +1,31 @@
+{
+  "name": "sol2dot",
+  "version": "0.0.1",
+  "description": "Generate a Graphviz DOT file from a solidity smart-contract.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spellblock/sol2dot.git"
+  },
+  "author": "Spellblock",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/spellblock/sol2dot/issues"
+  },
+  "homepage": "https://github.com/spellblock/sol2dot#readme",
+  "devDependencies": {
+    "@types/graphlib": "^2.1.8",
+    "@types/graphlib-dot": "^0.6.1",
+    "graphlib": "^2.1.8",
+    "graphlib-dot": "^0.6.4",
+    "typescript": "^4.5.5"
+  },
+  "dependencies": {
+    "@solidity-parser/parser": "^0.16.0"
+  }
+}
